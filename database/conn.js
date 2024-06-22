@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 // import { MongoMemoryServer } from "mongodb-memory-server";
-import data from '../config.js'
+// import data from '../config.js'
  async function connect(){
     // const Mongod=await MongoMemoryServer.create();
     // const getUri=Mongod.getUri();

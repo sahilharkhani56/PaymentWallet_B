@@ -19,6 +19,7 @@ router.get("/balance", authMiddleware, async (req, res) => {
   } catch (error) {
     return res.status(400).json({
       message: "Invalid credentials",
+      error:error.message
     });
   }
 });
@@ -71,6 +72,7 @@ router.post("/transfer", authMiddleware, async (req, res) => {
   } catch (error) {
     return res.status(400).json({
       message: "Invalid credentials",
+      error:error.message
     });
   }
 });

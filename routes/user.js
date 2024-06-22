@@ -76,6 +76,7 @@ userRouter.post("/signup", async (req, res) => {
   } catch (error) {
     return res.status(409).json({
       message: "Something went wrong",
+      error:error.message
     });
   }
 });
@@ -115,6 +116,7 @@ userRouter.post("/signin", async (req, res) => {
   } catch (error) {
     return res.status(409).json({
       message: "Something went wrong",
+      error:error.message
     });
   }
 });
@@ -151,6 +153,7 @@ userRouter.put("/", authMiddleware, async (req, res) => {
   } catch (error) {
     return res.status(409).json({
       message: "Something went wrong",
+      error:error.message
     });
   }
 });
